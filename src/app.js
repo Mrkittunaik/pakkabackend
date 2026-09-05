@@ -21,7 +21,11 @@ app.use('/api', apiLimiter);
 const allowedOrigins = [
   'https://milkadmin.pages.dev',
   'https://milkwebapp.pages.dev',
-  'https://deliverymilk.pages.dev'
+  'https://deliverymilk.pages.dev',
+  'http://localhost:5500',
+  'http://127.0.0.1:5500',
+  'http://localhost:3000',
+  'http://127.0.0.1:3000'
 ];
 
 app.use(cors({
